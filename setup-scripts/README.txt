@@ -1,0 +1,1 @@
+You can delete this folder after setup by the way.
