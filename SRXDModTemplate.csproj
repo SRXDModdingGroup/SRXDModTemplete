@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <PackageType>Template</PackageType>
+        <PackageVersion>1.0.5</PackageVersion>
+        <PackageId>SRXDModTemplate</PackageId>
+        <Authors>SRXDModdingGroup</Authors>
+        <Description>Mod template for SRXD.</Description>
+
+        <TargetFramework>netstandard2.1</TargetFramework>
+
+        <IncludeContentInPack>true</IncludeContentInPack>
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <ContentTargetFolders>content</ContentTargetFolders>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Remove="**\*" />
+        <Content Include=".template.config\**\*" />
+        <Content Include="SRXDModTemplate\**\*" Exclude="**\bin\**;**\obj\**" />
+    </ItemGroup>
+</Project>
